@@ -12,6 +12,8 @@ import XCGLogger
 
 let log = XCGLogger.default
 
+import Firebase
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -21,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // Configurar XCGLogger
         log.setup(level: .debug, showThreadName: true, showLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil, fileLevel: .debug)
+
+        // Configurar Firebase
+        FirebaseApp.configure()
 
         return true
     }

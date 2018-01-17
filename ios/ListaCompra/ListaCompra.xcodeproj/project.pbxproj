@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		418871DF200F5A1A0076EE4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 418871DE200F5A1A0076EE4F /* GoogleService-Info.plist */; };
 		4191C823200CE77400255825 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4191C822200CE77400255825 /* AppDelegate.swift */; };
 		4191C825200CE77400255825 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4191C824200CE77400255825 /* ViewController.swift */; };
 		4191C828200CE77400255825 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4191C826200CE77400255825 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		304CB10A032F9345ED0CE3CA /* Pods-ListaCompra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListaCompra.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ListaCompra/Pods-ListaCompra.debug.xcconfig"; sourceTree = "<group>"; };
+		418871DE200F5A1A0076EE4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4191C81F200CE77400255825 /* ListaCompra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListaCompra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4191C822200CE77400255825 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4191C824200CE77400255825 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				4191C826200CE77400255825 /* Main.storyboard */,
 				4191C829200CE77400255825 /* Assets.xcassets */,
 				4191C82B200CE77400255825 /* LaunchScreen.storyboard */,
+				418871DE200F5A1A0076EE4F /* GoogleService-Info.plist */,
 				4191C82E200CE77400255825 /* Info.plist */,
 			);
 			path = ListaCompra;
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4191C82D200CE77400255825 /* LaunchScreen.storyboard in Resources */,
+				418871DF200F5A1A0076EE4F /* GoogleService-Info.plist in Resources */,
 				4191C82A200CE77400255825 /* Assets.xcassets in Resources */,
 				4191C828200CE77400255825 /* Main.storyboard in Resources */,
 			);
@@ -199,13 +203,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ListaCompra/Pods-ListaCompra-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
 				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

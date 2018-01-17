@@ -8,4 +8,7 @@ target 'ListaCompra' do
   # Pods for ListaCompra
 
   pod 'XCGLogger', '~> 6.0.2'
+  
+  pod 'Firebase/Core'
+  
 end
