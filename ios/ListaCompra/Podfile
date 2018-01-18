@@ -10,5 +10,6 @@ target 'ListaCompra' do
   pod 'XCGLogger', '~> 6.0.2'
   
   pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
   
 end

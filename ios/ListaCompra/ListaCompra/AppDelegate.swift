@@ -14,6 +14,8 @@ let log = XCGLogger.default
 
 import Firebase
 
+let db = Firestore.firestore()
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
