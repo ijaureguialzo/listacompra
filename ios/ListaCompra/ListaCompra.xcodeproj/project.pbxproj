@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		416766B62024E44600E06DD9 /* ListasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416766B52024E44600E06DD9 /* ListasTableViewController.swift */; };
+		416766B82024E6B300E06DD9 /* Lista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416766B72024E6B300E06DD9 /* Lista.swift */; };
 		418871DF200F5A1A0076EE4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 418871DE200F5A1A0076EE4F /* GoogleService-Info.plist */; };
 		4191C823200CE77400255825 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4191C822200CE77400255825 /* AppDelegate.swift */; };
-		4191C825200CE77400255825 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4191C824200CE77400255825 /* ViewController.swift */; };
 		4191C828200CE77400255825 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4191C826200CE77400255825 /* Main.storyboard */; };
 		4191C82A200CE77400255825 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4191C829200CE77400255825 /* Assets.xcassets */; };
 		4191C82D200CE77400255825 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4191C82B200CE77400255825 /* LaunchScreen.storyboard */; };
@@ -18,10 +19,11 @@
 
 /* Begin PBXFileReference section */
 		304CB10A032F9345ED0CE3CA /* Pods-ListaCompra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListaCompra.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ListaCompra/Pods-ListaCompra.debug.xcconfig"; sourceTree = "<group>"; };
+		416766B52024E44600E06DD9 /* ListasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListasTableViewController.swift; sourceTree = "<group>"; };
+		416766B72024E6B300E06DD9 /* Lista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lista.swift; sourceTree = "<group>"; };
 		418871DE200F5A1A0076EE4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4191C81F200CE77400255825 /* ListaCompra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListaCompra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4191C822200CE77400255825 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4191C824200CE77400255825 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4191C827200CE77400255825 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4191C829200CE77400255825 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4191C82C200CE77400255825 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,12 +74,13 @@
 			isa = PBXGroup;
 			children = (
 				4191C822200CE77400255825 /* AppDelegate.swift */,
-				4191C824200CE77400255825 /* ViewController.swift */,
+				416766B52024E44600E06DD9 /* ListasTableViewController.swift */,
 				4191C826200CE77400255825 /* Main.storyboard */,
 				4191C829200CE77400255825 /* Assets.xcassets */,
 				4191C82B200CE77400255825 /* LaunchScreen.storyboard */,
 				418871DE200F5A1A0076EE4F /* GoogleService-Info.plist */,
 				4191C82E200CE77400255825 /* Info.plist */,
+				416766B72024E6B300E06DD9 /* Lista.swift */,
 			);
 			path = ListaCompra;
 			sourceTree = "<group>";
@@ -241,8 +244,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4191C825200CE77400255825 /* ViewController.swift in Sources */,
 				4191C823200CE77400255825 /* AppDelegate.swift in Sources */,
+				416766B62024E44600E06DD9 /* ListasTableViewController.swift in Sources */,
+				416766B82024E6B300E06DD9 /* Lista.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
