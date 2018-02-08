@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JgC-lc-i1J">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="haL-DS-Xim">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Listas Table View Controller-->
+        <!--ListaCompra-->
         <scene sceneID="IDi-NZ-9Tu">
             <objects>
                 <tableViewController id="JgC-lc-i1J" customClass="ListasTableViewController" customModule="ListaCompra" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,10 +33,61 @@
                             <outlet property="delegate" destination="JgC-lc-i1J" id="vhQ-zf-MFQ"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="ListaCompra" id="nXO-ns-hvH">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="lqh-Gf-hQB">
+                            <connections>
+                                <segue destination="uHI-y1-CeJ" kind="show" id="9vT-fO-Vqm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tu9-jZ-wzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-98" y="153"/>
+            <point key="canvasLocation" x="294" y="152"/>
+        </scene>
+        <!--Nueva lista-->
+        <scene sceneID="RZU-9d-lFt">
+            <objects>
+                <viewController id="uHI-y1-CeJ" customClass="NuevaListaViewController" customModule="ListaCompra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="659-fB-lsp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Lkz-LO-xcE"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Nueva lista" id="UHU-PL-uRd">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="sKG-I8-PAz"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6gK-N2-MJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1068" y="152.47376311844079"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9DW-z4-HfJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="haL-DS-Xim" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Qd9-W6-AEv">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="barTintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JgC-lc-i1J" kind="relationship" relationship="rootViewController" id="IeD-l7-XXL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HQc-cU-QSS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-511" y="152"/>
         </scene>
     </scenes>
 </document>

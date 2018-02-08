@@ -12,4 +12,6 @@ target 'ListaCompra' do
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   
+  pod 'Eureka'
+  
 end
