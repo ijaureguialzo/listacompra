@@ -19,6 +19,7 @@ class NuevaListaViewController: FormViewController {
         <<< TextRow() { row in
             row.title = "Título"
             row.placeholder = "Supermercado"
+            row.tag = "titulo"
         }
 
     }

@@ -42,6 +42,7 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tu9-jZ-wzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Nm8-Bv-cbM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="294" y="152"/>
         </scene>
@@ -56,7 +57,11 @@
                         <viewLayoutGuide key="safeArea" id="Lkz-LO-xcE"/>
                     </view>
                     <navigationItem key="navigationItem" title="Nueva lista" id="UHU-PL-uRd">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="sKG-I8-PAz"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="sKG-I8-PAz">
+                            <connections>
+                                <segue destination="Nm8-Bv-cbM" kind="unwind" identifier="guardarNuevaLista" unwindAction="guardarNuevaListaWithSegue:" id="Lti-I3-FBh"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6gK-N2-MJp" userLabel="First Responder" sceneMemberID="firstResponder"/>

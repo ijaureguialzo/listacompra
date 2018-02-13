@@ -8,40 +8,61 @@
 
 import UIKit
 
+import Eureka
+
 class ListasTableViewController: UITableViewController {
 
     var listas = [Lista]()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         //let lista = Lista(titulo:"Prueba")
-        
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
 
-        db.collection("listas").getDocuments() { (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-                for document in querySnapshot!.documents {
-                    
+        db.collection("listas")
+            .addSnapshotListener { querySnapshot, error in
+                guard let documents = querySnapshot?.documents else {
+                    print("Error fetching documents: \(error!)")
+                    return
+                }
+
+                self.listas.removeAll()
+
+                for document in documents {
+
                     let datos = document.data()
                     let titulo = datos["titulo"] as? String ?? "?"
-                    let lista = Lista(titulo:titulo)
-                    
+                    let lista = Lista(titulo: titulo)
+
                     self.listas.append(lista)
-                    
-                    //print("\(document.documentID) => \(document.data())")
                 }
-                
+
                 self.tableView.reloadData()
+        }
+
+    }
+
+    @IBAction func guardarNuevaLista(segue: UIStoryboardSegue) {
+
+        let formulario = segue.source as! NuevaListaViewController
+
+        let titulo: TextRow? = formulario.form.rowBy(tag: "titulo")
+
+        log.debug(titulo?.value)
+
+        db.collection("listas").addDocument(data: [
+            "titulo": titulo?.value ?? "?",
+        ]) { err in
+            if let err = err {
+                print("Error adding document: \(err)")
             }
         }
-    
     }
 
     override func didReceiveMemoryWarning() {
