@@ -10,6 +10,8 @@ import UIKit
 
 import Eureka
 
+import Firebase
+
 class ListasTableViewController: UITableViewController {
 
     var listas = [Lista]()
@@ -25,25 +27,52 @@ class ListasTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
 
-        db.collection("listas")
-            .addSnapshotListener { querySnapshot, error in
-                guard let documents = querySnapshot?.documents else {
-                    print("Error fetching documents: \(error!)")
-                    return
-                }
+        // Acceso con el usuario anónimo de Firebase
+        Auth.auth().signInAnonymously() { (user, error) in
 
-                self.listas.removeAll()
+            // UID de usuario asignado por Firebase
+            let uid = user!.uid
+            log.debug("Usuario: \(uid)")
 
-                for document in documents {
+            // Añadimos un listener al documento correspondiente a este usuario
+            db.collection("usuarios").document(uid)
+                .addSnapshotListener { documentSnapshot, error in
+                    guard let document = documentSnapshot else {
+                        log.error("Error al recuperar datos: \(error!)")
+                        return
+                    }
 
-                    let datos = document.data()
-                    let titulo = datos["titulo"] as? String ?? "?"
-                    let lista = Lista(titulo: titulo)
+                    // Extraer el array de IDs de listas del usuario
+                    let listas = document["listas"] as? [String] ?? [String]()
 
-                    self.listas.append(lista)
-                }
+                    // Limpiar el array de objetos
+                    self.listas.removeAll()
 
-                self.tableView.reloadData()
+                    // Recuperar cada lista
+                    for id in listas {
+
+                        // Cargar cada lista individual
+                        db.collection("listas").document(id).getDocument { (document, error) in
+
+                            if let document = document {
+
+                                // Recuperar los datos de la lista y crear el objeto
+                                if let datos = document.data() {
+                                    let titulo = datos["titulo"] as? String ?? "?"
+                                    let lista = Lista(titulo: titulo)
+                                    self.listas.append(lista)
+                                }
+
+                                // Recargar la tabla
+                                self.tableView.reloadData()
+
+                            } else {
+                                log.error("Document does not exist")
+                            }
+                        }
+
+                    }
+            }
         }
 
     }
