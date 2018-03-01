@@ -34,45 +34,29 @@ class ListasTableViewController: UITableViewController {
             let uid = user!.uid
             log.debug("Usuario: \(uid)")
 
-            // Añadimos un listener al documento correspondiente a este usuario
-            db.collection("usuarios").document(uid)
-                .addSnapshotListener { documentSnapshot, error in
-                    guard let document = documentSnapshot else {
-                        log.error("Error al recuperar datos: \(error!)")
+            db.collection("listas").whereField("usuario", isEqualTo: uid)
+                .addSnapshotListener { querySnapshot, error in
+                    guard let documents = querySnapshot?.documents else {
+                        print("Error fetching documents: \(error!)")
                         return
                     }
-
-                    // Extraer el array de IDs de listas del usuario
-                    let listas = document["listas"] as? [String] ?? [String]()
 
                     // Limpiar el array de objetos
                     self.listas.removeAll()
 
-                    // Recuperar cada lista
-                    for id in listas {
-
-                        // Cargar cada lista individual
-                        db.collection("listas").document(id).getDocument { (document, error) in
-
-                            if let document = document {
-
-                                // Recuperar los datos de la lista y crear el objeto
-                                if let datos = document.data() {
-                                    let titulo = datos["titulo"] as? String ?? "?"
-                                    let lista = Lista(titulo: titulo)
-                                    self.listas.append(lista)
-                                }
-
-                                // Recargar la tabla
-                                self.tableView.reloadData()
-
-                            } else {
-                                log.error("Document does not exist")
-                            }
-                        }
-
+                    for document in documents {
+                        // Recuperar los datos de la lista y crear el objeto
+                        let datos = document.data()
+                        let titulo = datos["titulo"] as? String ?? "?"
+                        let lista = Lista(titulo: titulo)
+                        self.listas.append(lista)
                     }
+
+                    // Recargar la tabla
+                    self.tableView.reloadData()
+
             }
+
         }
 
     }
@@ -85,11 +69,19 @@ class ListasTableViewController: UITableViewController {
 
         log.debug(titulo?.value)
 
-        db.collection("listas").addDocument(data: [
-            "titulo": titulo?.value ?? "?",
-        ]) { err in
-            if let err = err {
-                print("Error adding document: \(err)")
+        // Acceso con el usuario anónimo de Firebase
+        Auth.auth().signInAnonymously() { (user, error) in
+
+            // UID de usuario asignado por Firebase
+            let uid = user!.uid
+
+            db.collection("listas").addDocument(data: [
+                "titulo": titulo?.value ?? "?",
+                "usuario": uid
+            ]) { err in
+                if let err = err {
+                    print("Error adding document: \(err)")
+                }
             }
         }
     }
