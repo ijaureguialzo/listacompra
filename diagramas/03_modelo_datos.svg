@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="197 245 746 421" width="746pt" height="421pt" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata> Produced by OmniGraffle 7.4.1 
+    <dc:date>2018-03-01 23:59:22 +0000</dc:date>
+  </metadata>
+  <defs>
+    <font-face font-family="Helvetica Neue" font-size="10" panose-1="2 0 8 3 0 0 0 9 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="975.0061" descent="-216.99524" font-weight="bold">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica Neue" font-size="10" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="500">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>Lienzo 1</title>
+    <rect fill="white" width="744.75" height="420.5"/>
+    <g>
+      <title>Capa 1</title>
+      <path d="M 356 246 L 455.5 246 C 458.2614 246 460.5 248.23858 460.5 251 L 460.5 350.5 C 460.5 353.26142 458.2614 355.5 455.5 355.5 L 356 355.5 C 353.23858 355.5 351 353.26142 351 350.5 L 351 251 C 351 248.23858 353.23858 246 356 246 Z" fill="#fc0"/>
+      <path d="M 356 246 L 455.5 246 C 458.2614 246 460.5 248.23858 460.5 251 L 460.5 350.5 C 460.5 353.26142 458.2614 355.5 455.5 355.5 L 356 355.5 C 353.23858 355.5 351 353.26142 351 350.5 L 351 251 C 351 248.23858 353.23858 246 356 246 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(356 276.32497)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="bold" x="34.575" y="10" textLength="30.35">lista_1</tspan>
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="500" x="38.73" y="34.29007" textLength="22.04">titulo</tspan>
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="500" x="7.76" y="46.57007" textLength="9.26">pr</tspan>
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="500" x="16.84" y="46.57007" textLength="74.9">opietario = uid_1</tspan>
+      </text>
+      <path d="M 356 401 L 455.5 401 C 458.2614 401 460.5 403.2386 460.5 406 L 460.5 505.5 C 460.5 508.2614 458.2614 510.5 455.5 510.5 L 356 510.5 C 353.23858 510.5 351 508.2614 351 505.5 L 351 406 C 351 403.2386 353.23858 401 356 401 Z" fill="#fc0"/>
+      <path d="M 356 401 L 455.5 401 C 458.2614 401 460.5 403.2386 460.5 406 L 460.5 505.5 C 460.5 508.2614 458.2614 510.5 455.5 510.5 L 356 510.5 C 353.23858 510.5 351 508.2614 351 505.5 L 351 406 C 351 403.2386 353.23858 401 356 401 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(356 431.32497)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="bold" x="34.575" y="10" textLength="30.35">lista_2</tspan>
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="500" x="38.73" y="34.29007" textLength="22.04">titulo</tspan>
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="500" x="7.76" y="46.57007" textLength="9.26">pr</tspan>
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="500" x="16.84" y="46.57007" textLength="74.9">opietario = uid_1</tspan>
+      </text>
+      <path d="M 508.75 246 L 608.25 246 C 611.0114 246 613.25 248.23858 613.25 251 L 613.25 350.5 C 613.25 353.26142 611.0114 355.5 608.25 355.5 L 508.75 355.5 C 505.9886 355.5 503.75 353.26142 503.75 350.5 L 503.75 251 C 503.75 248.23858 505.9886 246 508.75 246 Z" fill="#1badf8"/>
+      <path d="M 508.75 246 L 608.25 246 C 611.0114 246 613.25 248.23858 613.25 251 L 613.25 350.5 C 613.25 353.26142 611.0114 355.5 608.25 355.5 L 508.75 355.5 C 505.9886 355.5 503.75 353.26142 503.75 350.5 L 503.75 251 C 503.75 248.23858 505.9886 246 508.75 246 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(508.75 294.60497)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="bold" x="36.615" y="10" textLength="26.27">items</tspan>
+      </text>
+      <path d="M 661.5 246 L 761 246 C 763.7614 246 766 248.23858 766 251 L 766 350.5 C 766 353.26142 763.7614 355.5 761 355.5 L 661.5 355.5 C 658.7386 355.5 656.5 353.26142 656.5 350.5 L 656.5 251 C 656.5 248.23858 658.7386 246 661.5 246 Z" fill="#fc0"/>
+      <path d="M 661.5 246 L 761 246 C 763.7614 246 766 248.23858 766 251 L 766 350.5 C 766 353.26142 763.7614 355.5 761 355.5 L 661.5 355.5 C 658.7386 355.5 656.5 353.26142 656.5 350.5 L 656.5 251 C 656.5 248.23858 658.7386 246 661.5 246 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(661.5 276.32497)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="bold" x="34.02" y="10" textLength="31.46">item_1</tspan>
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="500" x="38.73" y="34.29007" textLength="22.04">titulo</tspan>
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="500" x="6.835" y="46.57007" textLength="85.83">completado = false</tspan>
+      </text>
+      <path d="M 661.5 401 L 761 401 C 763.7614 401 766 403.2386 766 406 L 766 505.5 C 766 508.2614 763.7614 510.5 761 510.5 L 661.5 510.5 C 658.7386 510.5 656.5 508.2614 656.5 505.5 L 656.5 406 C 656.5 403.2386 658.7386 401 661.5 401 Z" fill="#fc0"/>
+      <path d="M 661.5 401 L 761 401 C 763.7614 401 766 403.2386 766 406 L 766 505.5 C 766 508.2614 763.7614 510.5 761 510.5 L 661.5 510.5 C 658.7386 510.5 656.5 508.2614 656.5 505.5 L 656.5 406 C 656.5 403.2386 658.7386 401 661.5 401 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(661.5 431.32497)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="bold" x="34.02" y="10" textLength="31.46">item_2</tspan>
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="500" x="38.73" y="34.29007" textLength="22.04">titulo</tspan>
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="500" x="8.59" y="46.57007" textLength="82.32">completado = true</tspan>
+      </text>
+      <path d="M 661.5 556 L 761 556 C 763.7614 556 766 558.2386 766 561 L 766 660.5 C 766 663.2614 763.7614 665.5 761 665.5 L 661.5 665.5 C 658.7386 665.5 656.5 663.2614 656.5 660.5 L 656.5 561 C 656.5 558.2386 658.7386 556 661.5 556 Z" fill="#fc0"/>
+      <path d="M 661.5 556 L 761 556 C 763.7614 556 766 558.2386 766 561 L 766 660.5 C 766 663.2614 763.7614 665.5 761 665.5 L 661.5 665.5 C 658.7386 665.5 656.5 663.2614 656.5 660.5 L 656.5 561 C 656.5 558.2386 658.7386 556 661.5 556 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(661.5 586.325)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="bold" x="34.02" y="10" textLength="31.46">item_3</tspan>
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="500" x="38.73" y="34.29007" textLength="22.04">titulo</tspan>
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="500" x="6.835" y="46.57007" textLength="85.83">completado = false</tspan>
+      </text>
+      <path d="M 203.25 246 L 302.75 246 C 305.51142 246 307.75 248.23858 307.75 251 L 307.75 350.5 C 307.75 353.26142 305.51142 355.5 302.75 355.5 L 203.25 355.5 C 200.48858 355.5 198.25 353.26142 198.25 350.5 L 198.25 251 C 198.25 248.23858 200.48858 246 203.25 246 Z" fill="#1badf8"/>
+      <path d="M 203.25 246 L 302.75 246 C 305.51142 246 307.75 248.23858 307.75 251 L 307.75 350.5 C 307.75 353.26142 305.51142 355.5 302.75 355.5 L 203.25 355.5 C 200.48858 355.5 198.25 353.26142 198.25 350.5 L 198.25 251 C 198.25 248.23858 200.48858 246 203.25 246 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(203.25 294.60497)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="bold" x="37.17" y="10" textLength="25.16">listas</tspan>
+      </text>
+      <line x1="307.75" y1="300.75" x2="341.1" y2="300.75" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="305.87473" y1="354.40357" x2="345.92628" y2="395.0451" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="460.5" y1="300.75" x2="493.85" y2="300.75" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="613.25" y1="300.75" x2="646.6" y2="300.75" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="611.3747" y1="354.40357" x2="651.4263" y2="395.0451" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path d="M 575.3182 355.5 C 585.78096 386.0453 601.2376 426.3635 622 468.5 C 637.1771 499.3013 652.6863 525.9945 666.42795 547.6726" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path d="M 837.5 511 L 937 511 C 939.7614 511 942 513.2386 942 516 L 942 615.5 C 942 618.2614 939.7614 620.5 937 620.5 L 837.5 620.5 C 834.7386 620.5 832.5 618.2614 832.5 615.5 L 832.5 516 C 832.5 513.2386 834.7386 511 837.5 511 Z" fill="#fc0"/>
+      <path d="M 837.5 511 L 937 511 C 939.7614 511 942 513.2386 942 516 L 942 615.5 C 942 618.2614 939.7614 620.5 937 620.5 L 837.5 620.5 C 834.7386 620.5 832.5 618.2614 832.5 615.5 L 832.5 516 C 832.5 513.2386 834.7386 511 837.5 511 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(837.5 541.32497)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="bold" x="44.57" y="10" textLength="10.36">ID</tspan>
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="500" x="15.665" y="34.29007" textLength="9.26">pr</tspan>
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="500" x="24.745" y="34.29007" textLength="59.09">opiedad: tipo</tspan>
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="500" x="10.355" y="46.57007" textLength="9.26">pr</tspan>
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="500" x="19.435" y="46.57007" textLength="69.71">opiedad = valor</tspan>
+      </text>
+      <path d="M 837.5 347 L 937 347 C 939.7614 347 942 349.23858 942 352 L 942 451.5 C 942 454.2614 939.7614 456.5 937 456.5 L 837.5 456.5 C 834.7386 456.5 832.5 454.2614 832.5 451.5 L 832.5 352 C 832.5 349.23858 834.7386 347 837.5 347 Z" fill="#1badf8"/>
+      <path d="M 837.5 347 L 937 347 C 939.7614 347 942 349.23858 942 352 L 942 451.5 C 942 454.2614 939.7614 456.5 937 456.5 L 837.5 456.5 C 834.7386 456.5 832.5 454.2614 832.5 451.5 L 832.5 352 C 832.5 349.23858 834.7386 347 837.5 347 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(837.5 395.60497)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="bold" x="31.42" y="10" textLength="31.1">nombr</tspan>
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="bold" x="62.34" y="10" textLength="5.74">e</tspan>
+      </text>
+      <text transform="translate(894 329.36)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="500" x=".02" y="10" textLength="42.96">colección</tspan>
+      </text>
+      <text transform="translate(886 492.86)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="10" font-weight="500" x=".025" y="10" textLength="50.95">documento</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
