@@ -37,7 +37,7 @@ class ListasTableViewController: UITableViewController {
             db.collection("listas").whereField("propietario", isEqualTo: uid)
                 .addSnapshotListener { querySnapshot, error in
                     guard let documents = querySnapshot?.documents else {
-                        print("Error fetching documents: \(error!)")
+                        log.error("Error al recuperar documentos: \(error!)")
                         return
                     }
 
@@ -80,7 +80,7 @@ class ListasTableViewController: UITableViewController {
                 "propietario": uid
             ]) { err in
                 if let err = err {
-                    print("Error adding document: \(err)")
+                    log.error("Error al añadir el documento: \(err)")
                 }
             }
         }
